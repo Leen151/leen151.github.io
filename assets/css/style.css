@@ -2,12 +2,13 @@
     --primary-color: #9356DC;    
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0;
+    --test1 : yellow;
+    --test2 : blue;
     --box-shadox : 0px 3px 15px 0px rgba(0,0,0,0.3);
     --text-color : #008766;
     --background-footer : #353535;
     --gradient-normal : linear-gradient(180deg, rgba(226,112,218,1) 0%, rgba(160,91,220,1) 100%);
     --gradient-hover : linear-gradient(180deg, rgba(228,132,224,1) 0%, rgba(176,116,225,1) 100%);
-
 
 }
 
@@ -54,17 +55,12 @@ a {
     height: 150px;
 }
 
+.contener{
+    width: 100%;
+}
 
 
-.card-image{
-    position: relative;
-}
-.tag-new{
-    background-color: #99E2D0;
-    z-index: 2;
-    position: absolute;
-    top: 13px; right: 12px;
-}
+
 
 
 
