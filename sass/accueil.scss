@@ -1,12 +1,138 @@
 @import "reset.scss";
 @import "style.scss";
 
-.card-image{
-    position: relative;
+main{
+    margin: 0 18px;
 }
-.tag-new{
-    background-color: #99E2D0;
-    z-index: 2;
-    position: absolute;
-    top: 7%; right: 3.5%;
+
+section{
+    padding-top: 40px;
+    padding-bottom: 65px;
 }
+
+.sous-titre{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.fonctionnement h2, .restaurants h2{
+    margin-bottom: 20px;
+}
+
+.fonctionnement{
+    .list-infos{
+        flex-direction: column;
+        gap: 1.5rem;
+
+        li{
+            align-items: center;
+        }
+    }
+
+    .numero{
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 0.8rem;
+        background-color: var(--purple-color);
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+        p{
+            color: white;
+        }
+    }
+
+    .etape{
+        // border: 1px solid black;
+
+        align-items: center;        
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        position: relative;
+        left: -0.7rem;
+        height: 72px;
+        padding-right: 0.6rem;
+    }
+
+    i{
+        color: var(--grey-tiny);
+        width: 55px;
+        text-align: center;
+        padding-left: 0.6rem;
+
+        &.color-purple{
+            color: var(--purple-color);
+        }
+    }
+
+
+}
+
+
+
+
+.restaurants{   
+
+    .conteneur-grid{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        gap: 1.2rem;
+    }
+
+    .restaurant{
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+        .card-title{
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .card-infos{
+            font-size: 1.05rem;
+            font-weight: 300;
+        }
+
+        .card-image {
+            position: relative;
+    
+            img{
+                border-radius: 15px 15px 0 0;
+            }   
+            
+            .tag-new{
+                background-color: var(--green-color);
+                color: var(--green-text-color);
+                font-size: 0.9rem;
+                border-radius: 0.13rem;        
+                z-index: 2;
+                position: absolute;
+                top: 7%; right: 3.5%;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+                min-width: 80px;
+                min-height: 29px;
+                justify-content: center;
+                align-items: center;
+    
+                p{
+                    padding: 0.1rem 0.3rem;
+                }
+            }
+        }
+    
+        .card-content{
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 7.5% 20px 4%;
+    
+            .fa-heart{
+                font-size: 1.3rem;
+            }  
+        }
+    }
+}
+
+
