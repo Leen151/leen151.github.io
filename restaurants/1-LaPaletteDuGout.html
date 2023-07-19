@@ -18,16 +18,19 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="conteneur-flex">
         <div class="logo titre">ohmyfood</div>
-        <nav>
+        <nav class="conteneur-flex">
             <a href="../index.html">
-                <i class="fa-solid fa-arrow-right"></i>
+                <div class="conteneur-flex">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>                
             </a>
         </nav>
     </header>
 
-    <main>        
+    <main>
+        <div><img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="restaurant-img"></div>
         <div>
             <h1 class="titre">La palette du goût</h1>
             <div class="card-like">
@@ -35,10 +38,10 @@
                 <i class="fa-solid fa-heart"></i>
             </div>
         </div>
-        <div><img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="restaurant-img"></div>
         <div>
             <section id="entree">
                 <h2>Entrées</h2>
+                <div class="underline"></div>
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Fricassée d'escargots</h3>
@@ -48,6 +51,7 @@
                         <p>25<span>€</span></p>
                     </div>
                 </article>
+
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Foie gras de canard mi-cuit</h3>
@@ -57,6 +61,7 @@
                         <p>35<span>€</span></p>
                     </div>
                 </article>
+
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Œuf au plat</h3>
@@ -67,8 +72,10 @@
                     </div>
                 </article>
             </section>
+
             <section id="plat">
                 <h2>Plats</h2>
+                <div class="underline"></div>
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Filet de bœuf aux herbes</h3>
@@ -78,6 +85,7 @@
                         <p>40<span>€</span></p>
                     </div>
                 </article>
+
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Parmentier de queue de bœuf</h3>
@@ -87,6 +95,7 @@
                         <p>35<span>€</span></p>
                     </div>
                 </article>
+
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Filet de turbot</h3>
@@ -97,8 +106,10 @@
                     </div>
                 </article>
             </section>
+
             <section id="dessert">
                 <h2>Desserts</h2>
+                <div class="underline"></div>
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Paris-Brest</h3>
@@ -108,6 +119,7 @@
                         <p>18<span>€</span></p>
                     </div>
                 </article>
+
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Macaron au chocolat d'exception</h3>
@@ -117,6 +129,7 @@
                         <p>22<span>€</span></p>
                     </div>
                 </article>
+
                 <article class="plat">
                     <div class="plat-texte">
                         <h3>Mousse au chocolat</h3>
@@ -133,21 +146,30 @@
         </div>
    </main>
 
-   <footer>
-    <div class="titre-site titre">ohmyfood</div>
-    <div class="lien-footer">
-        <div>
-            <i class="fa-solid fa-utensils"></i>
-            <a href="#">Proposer un restaurant</a>
-        </div>
-        <div>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <a href="#">Devenir partenaire</a>
-        </div>
-        <div><a href="#">Mentions légales</a></div>
-        <div><a href="#">Contact</a></div>
-    </div>
-   </footer>
+   <footer class="conteneur-flex">    
+    <h2 class="titre-site titre">ohmyfood</h2>
+    
+    <ul class="lien-footer conteneur-flex">
+        <li class="conteneur-flex">
+            <div class="icone-footer conteneur-flex">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+            <a href="#" class="font-500">Proposer un restaurant</a>
+        </li>
+        <li class="conteneur-flex">
+            <div class="icone-footer conteneur-flex">
+                <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <a href="#" class="font-500">Devenir partenaire</a>
+        </li>
+        <li class="conteneur-flex">
+            <a href="#" class="font-300">Mentions légales</a>
+        </li>
+        <li class="conteneur-flex">
+            <a href="mailto:#" class="font-300">Contact</a>
+        </li>
+    </ul>
+</footer>
     
 </body>
 </html>

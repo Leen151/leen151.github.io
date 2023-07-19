@@ -2,6 +2,47 @@
 @import "style.scss";
 
 
+header{
+    position: relative;
+
+    .logo{
+        font-size: 1.9rem;
+        box-shadow: none;
+    }
+
+    nav{
+        z-index: 5;
+        transform: rotate(180deg);
+        position: absolute;
+        align-items: center;
+        height: 100%;
+        padding-right: 1rem;
+
+        div{
+            align-items: center;
+            height: 1.9rem;
+            width: 1.9rem;
+        }
+
+        i{
+            width: 100%;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+    }
+}
+
+.underline{
+    height: 0.19rem;
+    width: 3rem;
+    background-color: var(--green-color);
+}
+
+
+
+
+
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

@@ -5,7 +5,7 @@
     --pink-light-color: rgb(228,132,224);
 
     --grey-tiny : #7E7E7E;
-    
+    --grey-2 : #EAEAEA;
 
     --green-color: #99E2D0;
     --green-text-color : #008766;
@@ -13,7 +13,7 @@
     --box-shadox-card : 0px 3px 15px 0px rgba(0,0,0,0.3);
     --box-shadow-tag: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);    
 
-    --background-dark : #353535;
+    --grey-dark : #353535;
     --background-clear : #eaeaea;
 
     --gradient-normal : linear-gradient(var(--pink-color),var(--purple-color));
@@ -48,6 +48,25 @@ a {
 }
 
 
+
+/******** logo/header *********/
+header{
+    flex-direction: column;
+
+    .logo{
+        z-index: 3;
+        width: 100%;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        padding: 0.6rem 0;
+
+        .titre{
+            font-size: 1.9rem;
+        }
+    }
+}
+
+
 /* images des restaurants */
 .contener{
     width: 100%;
@@ -61,10 +80,9 @@ a {
 /* boutons */
 .btn{    
     background: var(--gradient-normal); 
-    //background: linear-gradient(#FF79DA,#9356DC); 
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); 
     border-radius: 25px;
-    padding: 20px;
+    padding: 0.8rem 1.2rem;
     color: white;
 
     &:hover{
@@ -105,7 +123,7 @@ a {
 /***************** Footer ********************/
 footer{
     padding: 22px 25px;
-    background-color: var(--background-dark);
+    background-color: var(--grey-dark);
     flex-direction: column;
     gap: 1rem; 
 

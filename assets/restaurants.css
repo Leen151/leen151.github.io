@@ -62,18 +62,23 @@ audio:not([controls]),
 
 
 :root {
-  --purple-primary-color: #9356DC;
-  --pink-secondary-color: #FF79DA;
-  --green-tertiary-color: #99E2D0;
+  --purple-color: #9356DC;
+  --pink-color: #FF79DA;
+  --purple-light-color: rgb(176,116,225);
+  --pink-light-color: rgb(228,132,224);
+  --grey-tiny: #7E7E7E;
+  --grey-2: #EAEAEA;
+  --green-color: #99E2D0;
+  --green-text-color: #008766;
   --box-shadox-card: 0px 3px 15px 0px rgba(0,0,0,0.3);
   --box-shadow-tag: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  --green-text-color: #008766;
-  --background-dark: #353535;
+  --grey-dark: #353535;
   --background-clear: #eaeaea;
-  --gradient-normal: linear-gradient(180deg, rgba(226,112,218,1) 0%, rgba(160,91,220,1) 100%);
-  --gradient-hover: linear-gradient(180deg, rgba(228,132,224,1) 0%, rgba(176,116,225,1) 100%);
+  --gradient-normal: linear-gradient(var(--pink-color),var(--purple-color));
+  --gradient-hover: linear-gradient(var(--pink-light-color), var(--purple-light-color));
 }
 
+/****************** Général **********************/
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -87,24 +92,36 @@ a {
   color: #000;
 }
 
-/*********************************************************************************************************************/
-.btn {
-  /* background: var(--gradient-normal); */
-  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  padding: 20px;
-  color: white;
-}
-
-.btn:hover {
-  /* background: var(--gradient-hover); */
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(182deg, #9356DC 0%, #FF79DA 100%);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-}
-
 .conteneur-flex {
   display: flex;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+/******** logo/header *********/
+header {
+  flex-direction: column;
+}
+header .logo {
+  z-index: 3;
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 0.6rem 0;
+}
+header .logo .titre {
+  font-size: 1.9rem;
+}
+
+/* images des restaurants */
+.contener {
+  width: 100%;
 }
 
 .restaurant-img {
@@ -113,14 +130,41 @@ a {
   height: 150px;
 }
 
-.contener {
-  width: 100%;
+/* boutons */
+.btn {
+  background: var(--gradient-normal);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 0.8rem 1.2rem;
+  color: white;
+}
+.btn:hover {
+  background: var(--gradient-hover);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* animation des coeurs */
+.card-like .fa-solid {
+  display: none;
+}
+.card-like .fa-regular {
+  color: #353535;
+}
+.card-like:hover .fa-regular {
+  display: none;
+}
+.card-like:hover .fa-solid {
+  display: block;
+  background: linear-gradient(var(--purple-color), var(--pink-color));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /***************** Footer ********************/
 footer {
   padding: 22px 25px;
-  background-color: var(--background-dark);
+  background-color: var(--grey-dark);
   flex-direction: column;
   gap: 1rem;
 }
@@ -128,24 +172,56 @@ footer .titre, footer i, footer a {
   color: white;
 }
 footer .titre {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 footer ul {
   flex-direction: column;
   gap: 0.45rem;
 }
+footer ul li {
+  align-items: center;
+}
 footer .icone-footer {
   width: 0.8rem;
-  padding-right: 0.8rem;
-}
-footer .link-with-icone {
-  font-weight: 500;
+  padding-right: 1rem;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets) */
 /* Large devices (desktop) */
+header {
+  position: relative;
+}
+header .logo {
+  font-size: 1.9rem;
+  box-shadow: none;
+}
+header nav {
+  z-index: 5;
+  transform: rotate(180deg);
+  position: absolute;
+  align-items: center;
+  height: 100%;
+  padding-right: 1rem;
+}
+header nav div {
+  align-items: center;
+  height: 1.9rem;
+  width: 1.9rem;
+}
+header nav i {
+  width: 100%;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.underline {
+  height: 0.19rem;
+  width: 3rem;
+  background-color: var(--green-color);
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets) */
