@@ -68,12 +68,12 @@ audio:not([controls]),
   --pink-light-color: rgb(228,132,224);
   --grey-tiny: #7E7E7E;
   --grey-2: #EAEAEA;
+  --grey-dark: #353535;
+  --grey-bkg: #ddcbd3;
   --green-color: #99E2D0;
   --green-text-color: #008766;
   --box-shadox-card: 0px 3px 15px 0px rgba(0,0,0,0.3);
   --box-shadow-tag: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  --grey-dark: #353535;
-  --background-clear: #eaeaea;
   --gradient-normal: linear-gradient(var(--pink-color),var(--purple-color));
   --gradient-hover: linear-gradient(var(--pink-light-color), var(--purple-light-color));
 }
@@ -81,6 +81,11 @@ audio:not([controls]),
 /****************** Général **********************/
 * {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background-color: var(--grey-bkg);
 }
 
 .titre {
@@ -102,6 +107,10 @@ a {
 
 .font-300 {
   font-weight: 300;
+}
+
+.bkg-white {
+  background-color: white;
 }
 
 /******** logo/header *********/
@@ -144,6 +153,9 @@ header .logo .titre {
 }
 
 /* animation des coeurs */
+.card-like .fa-heart {
+  font-size: 1.3rem;
+}
 .card-like .fa-solid {
   display: none;
 }
@@ -190,13 +202,8 @@ footer .icone-footer {
 /****** Media queries ***********/
 /* Medium devices (tablets) */
 /* Large devices (desktop) */
-main {
-  margin: 0 18px;
-}
-
 section {
-  padding-top: 40px;
-  padding-bottom: 65px;
+  padding: 40px 18px 65px 18px;
 }
 
 .sous-titre {
@@ -260,6 +267,7 @@ header .localisation i {
   width: 100%;
   position: relative;
   left: -0.7rem;
+  margin-right: -0.7rem;
   height: 72px;
   padding-right: 0.6rem;
 }
@@ -319,9 +327,6 @@ header .localisation i {
   justify-content: space-between;
   align-items: center;
   padding: 15px 7.5% 20px 4%;
-}
-.restaurants .restaurant .card-content .fa-heart {
-  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=accueil.css.map */

@@ -6,15 +6,15 @@
 
     --grey-tiny : #7E7E7E;
     --grey-2 : #EAEAEA;
+    --grey-dark : #353535;
+    // --grey-bkg : #f6f6f6;
+    --grey-bkg : #ddcbd3;    
 
     --green-color: #99E2D0;
     --green-text-color : #008766;
 
     --box-shadox-card : 0px 3px 15px 0px rgba(0,0,0,0.3);
-    --box-shadow-tag: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);    
-
-    --grey-dark : #353535;
-    --background-clear : #eaeaea;
+    --box-shadow-tag: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
 
     --gradient-normal : linear-gradient(var(--pink-color),var(--purple-color));
     --gradient-hover : linear-gradient(var(--pink-light-color), var(--purple-light-color));
@@ -24,12 +24,16 @@
 /****************** Général **********************/
 *{
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+main{
+    background-color: var(--grey-bkg);
 }
 
 .titre{
     font-family: 'Shrikhand', sans-serif;
 }
-
 
 a {
     display: inline-block;
@@ -47,6 +51,9 @@ a {
     font-weight: 300;
 }
 
+.bkg-white{
+    background-color: white;
+}
 
 
 /******** logo/header *********/
@@ -95,6 +102,9 @@ header{
 
 /* animation des coeurs */
 .card-like{
+    .fa-heart{
+        font-size: 1.3rem;
+    }  
     .fa-solid{
         display: none;
     }

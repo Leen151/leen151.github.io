@@ -1,13 +1,8 @@
 @import "reset.scss";
 @import "style.scss";
 
-main{
-    margin: 0 18px;
-}
-
 section{
-    padding-top: 40px;
-    padding-bottom: 65px;
+    padding: 40px 18px 65px 18px;
 }
 
 .sous-titre{
@@ -83,6 +78,7 @@ header{
         width: 100%;
         position: relative;
         left: -0.7rem;
+        margin-right: -0.7rem;
         height: 72px;
         padding-right: 0.6rem;
     }
@@ -157,9 +153,7 @@ header{
             align-items: center;
             padding: 15px 7.5% 20px 4%;
     
-            .fa-heart{
-                font-size: 1.3rem;
-            }  
+            
         }
     }
 }
