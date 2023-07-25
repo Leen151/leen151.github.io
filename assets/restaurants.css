@@ -269,13 +269,18 @@ section h2 {
   font-weight: 300;
 }
 
-.plat {
+article {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 0.9rem;
   margin-top: 12px;
+  justify-content: space-between;
+}
+
+.plat {
   padding: 15px;
   justify-content: space-between;
   gap: 5%;
+  flex-grow: 1;
 }
 .plat .plat-texte h3 {
   font-size: 1.1rem;
@@ -290,6 +295,19 @@ section h2 {
   align-self: flex-end;
   font-weight: 500;
   font-size: 0.9rem;
+}
+
+.plat-check {
+  color: white;
+  background-color: var(--green-color);
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  justify-self: flex-end;
+  border-radius: 0 0.9rem 0.9rem 0;
+}
+.plat-check i {
+  font-size: 23px;
 }
 
 .div-btn {
