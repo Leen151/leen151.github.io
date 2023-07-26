@@ -1,8 +1,14 @@
 @import "reset.scss";
 @import "style.scss";
 
+
+/****** Général *******/
 section{
-    padding: 40px 18px 65px 18px;
+    // padding: 40px 18px 65px 18px;
+    padding-top: 40px;
+    padding-bottom: 65px;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 .sous-titre{
@@ -14,8 +20,13 @@ section{
     margin-bottom: 20px;
 }
 
+/******** logo/header *********/
+header{
+    .logo{
+        z-index: 2;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }    
 
-header{    
     .localisation{
         width: 100%;
         justify-content: center;
@@ -30,6 +41,7 @@ header{
     }
 }
 
+/***** partie Infos *****/
 .infos{
     flex-direction: column;
     align-items: center;
@@ -44,9 +56,9 @@ header{
     }
 }
 
-
+/***** partie Fonctionnement *****/
 .fonctionnement{
-    .list-infos{
+    .list-etapes{
         flex-direction: column;
         gap: 1.5rem;
 
@@ -80,7 +92,7 @@ header{
         left: -0.7rem;
         margin-right: -0.7rem;
         height: 72px;
-        padding-right: 0.6rem;
+        padding-right: 1rem;
     }
 
     i{
@@ -95,14 +107,11 @@ header{
     }
 }
 
-
-
-
-.restaurants{   
-
+/***** partie liste des restaurants *****/
+.restaurants{
     .conteneur-grid{
         display: grid;
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: 1fr;
         gap: 1.2rem;
     }
 
@@ -110,15 +119,10 @@ header{
         border-radius: 15px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
-        .card-title{
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 0.3rem;
-        }
-
-        .card-infos{
-            font-size: 1.05rem;
-            font-weight: 300;
+        .card-content{
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 7.5% 20px 4%;              
         }
 
         .card-image {
@@ -146,15 +150,62 @@ header{
                     padding: 0.1rem 0.3rem;
                 }
             }
+        } 
+
+        .card-title{
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
         }
-    
-        .card-content{
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 7.5% 20px 4%;
-    
-            
+
+        .card-infos{
+            font-size: 1.05rem;
+            font-weight: 300;
+        }              
+    }
+}
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+    .fonctionnement{
+        .list-etapes{
+            flex-direction: row;
         }
+        .etape{
+            padding-right: 2rem;
+        }
+    }
+
+    .restaurants{
+        .conteneur-grid{
+            grid-template-columns: 1fr 1fr;
+            column-gap: 7vw;
+            row-gap: 50px;
+        }
+    }
+}
+
+
+/* Large devices (desktop) */
+@media (min-width: 1024px) {
+    header{
+        .logo{
+            box-shadow: none;
+        }
+    }
+
+    main{
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    section{
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 }
 

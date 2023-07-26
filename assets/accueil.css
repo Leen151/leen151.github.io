@@ -64,21 +64,21 @@ audio:not([controls]),
 :root {
   --purple-color: #9356DC;
   --pink-color: #FF79DA;
-  --purple-light-color: rgb(176,116,225);
-  --pink-light-color: rgb(228,132,224);
+  --purple-light-color: rgb(176, 116, 225);
+  --pink-light-color: rgb(228, 132, 224);
   --grey-tiny: #7E7E7E;
   --grey-2: #EAEAEA;
   --grey-dark: #353535;
-  --grey-bkg: #ddcbd3;
+  --grey-bkg: #e6dee1;
   --green-color: #99E2D0;
   --green-text-color: #008766;
-  --box-shadox-card: 0px 3px 15px 0px rgba(0,0,0,0.3);
+  --box-shadox-card: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
   --box-shadow-tag: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  --gradient-normal: linear-gradient(var(--pink-color),var(--purple-color));
+  --gradient-normal: linear-gradient(var(--pink-color), var(--purple-color));
   --gradient-hover: linear-gradient(var(--pink-light-color), var(--purple-light-color));
 }
 
-/****************** Général **********************/
+/********* Général **********/
 * {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -118,9 +118,7 @@ header {
   flex-direction: column;
 }
 header .logo {
-  z-index: 3;
   width: 100%;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   padding: 0.6rem 0;
 }
@@ -128,7 +126,7 @@ header .logo .titre {
   font-size: 1.9rem;
 }
 
-/* images des restaurants */
+/****** images des restaurants ******/
 .contener {
   width: 100%;
 }
@@ -139,7 +137,7 @@ header .logo .titre {
   height: 150px;
 }
 
-/* boutons */
+/****** boutons ******/
 .btn {
   background: var(--gradient-normal);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -152,7 +150,7 @@ header .logo .titre {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-/* animation des coeurs */
+/****** animation des coeurs ******/
 .card-like .fa-heart {
   font-size: 1.3rem;
 }
@@ -173,14 +171,16 @@ header .logo .titre {
   -webkit-text-fill-color: transparent;
 }
 
-/***************** Footer ********************/
+/******* Footer ********/
 footer {
   padding: 22px 25px;
   background-color: var(--grey-dark);
   flex-direction: column;
   gap: 1rem;
 }
-footer .titre, footer i, footer a {
+footer .titre,
+footer i,
+footer a {
   color: white;
 }
 footer .titre {
@@ -202,8 +202,40 @@ footer .icone-footer {
 /****** Media queries ***********/
 /* Medium devices (tablets) */
 /* Large devices (desktop) */
+@media (min-width: 1024px) {
+  header .logo {
+    padding: 1.4rem 0;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 60px 50px 30px 25px;
+  }
+  footer h2 {
+    order: 2;
+  }
+  footer ul {
+    flex-direction: row;
+    order: 1;
+    gap: 10px;
+  }
+  footer ul .element-1 {
+    width: 11.8rem;
+  }
+  footer ul .element-2 {
+    width: 7.8rem;
+  }
+  footer .icone-footer {
+    width: auto;
+    padding-right: 0.4rem;
+  }
+}
+/****** Général *******/
 section {
-  padding: 40px 18px 65px 18px;
+  padding-top: 40px;
+  padding-bottom: 65px;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .sous-titre {
@@ -215,6 +247,11 @@ section {
   margin-bottom: 20px;
 }
 
+/******** logo/header *********/
+header .logo {
+  z-index: 2;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
 header .localisation {
   width: 100%;
   justify-content: center;
@@ -227,6 +264,7 @@ header .localisation i {
   padding-right: 17px;
 }
 
+/***** partie Infos *****/
 .infos {
   flex-direction: column;
   align-items: center;
@@ -239,11 +277,12 @@ header .localisation i {
   padding-bottom: 1.7rem;
 }
 
-.fonctionnement .list-infos {
+/***** partie Fonctionnement *****/
+.fonctionnement .list-etapes {
   flex-direction: column;
   gap: 1.5rem;
 }
-.fonctionnement .list-infos li {
+.fonctionnement .list-etapes li {
   align-items: center;
 }
 .fonctionnement .numero {
@@ -269,7 +308,7 @@ header .localisation i {
   left: -0.7rem;
   margin-right: -0.7rem;
   height: 72px;
-  padding-right: 0.6rem;
+  padding-right: 1rem;
 }
 .fonctionnement i {
   color: var(--grey-tiny);
@@ -281,23 +320,20 @@ header .localisation i {
   color: var(--purple-color);
 }
 
+/***** partie liste des restaurants *****/
 .restaurants .conteneur-grid {
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
   gap: 1.2rem;
 }
 .restaurants .restaurant {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.restaurants .restaurant .card-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 0.3rem;
-}
-.restaurants .restaurant .card-infos {
-  font-size: 1.05rem;
-  font-weight: 300;
+.restaurants .restaurant .card-content {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 7.5% 20px 4%;
 }
 .restaurants .restaurant .card-image {
   position: relative;
@@ -323,10 +359,45 @@ header .localisation i {
 .restaurants .restaurant .card-image .tag-new p {
   padding: 0.1rem 0.3rem;
 }
-.restaurants .restaurant .card-content {
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 7.5% 20px 4%;
+.restaurants .restaurant .card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.restaurants .restaurant .card-infos {
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .fonctionnement .list-etapes {
+    flex-direction: row;
+  }
+  .fonctionnement .etape {
+    padding-right: 2rem;
+  }
+  .restaurants .conteneur-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7vw;
+    row-gap: 50px;
+  }
+}
+/* Large devices (desktop) */
+@media (min-width: 1024px) {
+  header .logo {
+    box-shadow: none;
+  }
+  main {
+    max-width: 1440px;
+    margin: auto;
+  }
+  section {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 }
 
 /*# sourceMappingURL=accueil.css.map */

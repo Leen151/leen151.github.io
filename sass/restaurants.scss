@@ -1,138 +1,147 @@
 @import "reset.scss";
 @import "style.scss";
 
-
-header{
-    position: relative;
-
-    .logo{
-        font-size: 1.9rem;
-        box-shadow: none;
-    }
-
-    nav{
-        z-index: 5;
-        transform: rotate(180deg);
-        position: absolute;
-        align-items: center;
-        height: 100%;
-        padding-right: 1rem;
-
-        div{
-            align-items: center;
-            height: 1.9rem;
-            width: 1.9rem;
-        }
-
-        i{
-            width: 100%;
-            font-size: 1.25rem;
-            text-align: center;
-        }
-    }
-}
-
-.restaurant-img{
-    height: 250px;
-}
-
-.underline{
+/****** Général *******/
+.underline {
     height: 0.19rem;
     width: 3rem;
     background-color: var(--green-color);
     margin-top: 4px;
 }
 
-.menu{
+.div-btn,
+section {
+    margin-top: 40px;
+}
+
+/******** header *********/
+header {
+    .header-logo-nav {
+        position: relative;
+    }
+
+    .logo {
+        font-size: 1.9rem;
+    }
+
+    nav {
+        z-index: 10;
+        transform: rotate(180deg);
+        position: absolute;
+        align-items: center;
+        height: 100%;
+        padding-right: 1rem;
+
+        div {
+            align-items: center;
+            height: 1.9rem;
+            width: 1.9rem;
+        }
+
+        i {
+            font-size: 1.25rem;
+            text-align: center;
+        }
+    }
+
+    .restaurant-img {
+        height: 250px;
+    }
+}
+
+
+.menu {
+    flex-direction: column;
     border-radius: 45px 45px 0 0;
     background-color: var(--grey-bkg);
     position: relative;
     top: -45px;
 
-    h1{
-        font-size: 1.75rem;
-    }
-
-    .liste-plats{
-        margin: 0 13px;
-    }
-
-    .header-menu{
+    .titre-menu {
         align-items: center;
         gap: 24px;
-        padding: 32px 17px 0 17px;
-    }
-}
+        padding-top: 32px;
+        padding-left: 4vw;
+        padding-right: 4vw;
 
-.div-btn, section{
-    margin-top: 40px;
-}
-
-section{
-    flex-direction: column;
-    h2{
-        text-transform: uppercase;
-        font-weight: 300;
-    }
-}
-
-article{
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 0.9rem;
-    margin-top: 12px;
-    justify-content: space-between;
-}
-
-.plat{
-    // box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-    // border-radius: 0.9rem;
-    // margin-top: 12px;
-    padding: 15px;
-    justify-content: space-between;
-    gap: 5%;
-    flex-grow: 1;
-    
-
-    .plat-texte{
-        h3{
-            font-size: 1.1rem;
-            font-weight: 500;
-            padding-bottom: 5px;
-        }
-        p{
-            font-size: 0.9rem;
-            font-weight: 300;
+        h1 {
+            font-size: 1.75rem;
         }
     }
 
-    .plat-prix{
-        align-self: flex-end;
-        font-weight: 500;
-        font-size: 0.9rem;
+    .liste-plats {
+        margin: 0 4vw;
+        flex-direction: column;
+
+        section {
+            flex-direction: column;
+
+            h2 {
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+        }
+
+        article {
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            border-radius: 0.9rem;
+            margin-top: 12px;
+            justify-content: space-between;
+        }
+
+        .plat {
+            padding: 15px;
+            justify-content: space-between;
+            gap: 5%;
+            flex-grow: 1;
+
+
+            .plat-texte {
+                h3 {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    padding-bottom: 5px;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                }
+            }
+
+            .plat-prix {
+                align-self: flex-end;
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
+        }
+
+        .plat-check {
+            // display: none;
+            color: white;
+            background-color: var(--green-color);
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            justify-self: flex-end;
+            border-radius: 0 0.9rem 0.9rem 0;
+
+            i {
+                font-size: 23px;
+            }
+        }
+    }
+
+    .div-btn {
+        justify-content: center;
+        margin-bottom: 40px;
     }
 }
 
-.plat-check{
-    // display: none;
-    color: white;
-    background-color: var(--green-color);
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    justify-self: flex-end;
-    border-radius: 0 0.9rem 0.9rem 0;
-
-    i{
-        font-size: 23px;
-    }
+footer{
+    position: relative;
+    top: -45px;
 }
-
-.div-btn{
-    justify-content: center;
-}
-
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -140,12 +149,32 @@ article{
 /****** Media queries ***********/
 /* Medium devices (tablets) */
 @media (min-width: 768px) {
-
+    .liste-plats{
+        width: 650px;
+        margin: auto;
+    }
+    .menu{
+        align-items: center;
+    }
 }
 
 
 
 /* Large devices (desktop) */
-@media (min-width: 1024px) {  
+@media (min-width: 1024px) {
+    .menu {
+        max-width: 1050px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        // align-items: center;
+    }
 
+    header {
+        .restaurant-img {
+            height: 400px;
+        }        
+    }
+
+    
 }
