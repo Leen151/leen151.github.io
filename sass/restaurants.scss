@@ -94,16 +94,28 @@ header {
             justify-content: space-between;
             gap: 5%;
             flex-grow: 1;
+            width: 100%;
 
 
             .plat-texte {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: fit-content;
+
                 h3 {
+                    // white-space: nowrap;
+                    // overflow: hidden;
+                    // text-overflow: ellipsis;
                     font-size: 1.1rem;
                     font-weight: 500;
                     padding-bottom: 5px;
                 }
 
                 p {
+                    // white-space: nowrap;
+                    // overflow: hidden;
+                    // text-overflow: ellipsis;
                     font-size: 0.9rem;
                     font-weight: 300;
                 }
@@ -138,7 +150,7 @@ header {
     }
 }
 
-footer{
+footer {
     position: relative;
     top: -45px;
 }
@@ -149,11 +161,12 @@ footer{
 /****** Media queries ***********/
 /* Medium devices (tablets) */
 @media (min-width: 768px) {
-    .liste-plats{
+    .liste-plats {
         width: 650px;
         margin: auto;
     }
-    .menu{
+
+    .menu {
         align-items: center;
     }
 }
@@ -173,8 +186,8 @@ footer{
     header {
         .restaurant-img {
             height: 400px;
-        }        
+        }
     }
 
-    
+
 }
