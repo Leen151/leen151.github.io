@@ -268,16 +268,15 @@ header nav i {
   font-size: 1.25rem;
   text-align: center;
 }
+header .banniere {
+  height: 200px;
+}
 header .restaurant-img {
   height: 250px;
 }
 
 .menu {
   flex-direction: column;
-  border-radius: 45px 45px 0 0;
-  background-color: var(--grey-bkg);
-  position: relative;
-  top: -45px;
 }
 .menu .titre-menu {
   align-items: center;
@@ -285,6 +284,8 @@ header .restaurant-img {
   padding-top: 32px;
   padding-left: 4vw;
   padding-right: 4vw;
+  background-color: var(--grey-bkg);
+  border-radius: 45px 45px 0 0;
 }
 .menu .titre-menu h1 {
   font-size: 1.75rem;
@@ -312,12 +313,6 @@ header .restaurant-img {
   gap: 5%;
   flex-grow: 1;
   width: 100%;
-}
-.menu .liste-plats .plat .plat-texte {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: fit-content;
 }
 .menu .liste-plats .plat .plat-texte h3 {
   font-size: 1.1rem;
@@ -350,11 +345,6 @@ header .restaurant-img {
   margin-bottom: 40px;
 }
 
-footer {
-  position: relative;
-  top: -45px;
-}
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets) */
@@ -366,6 +356,9 @@ footer {
   .menu {
     align-items: center;
   }
+  .menu .titre-menu {
+    width: 100%;
+  }
 }
 /* Large devices (desktop) */
 @media (min-width: 1024px) {
@@ -374,6 +367,9 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  header .banniere {
+    height: 350px;
   }
   header .restaurant-img {
     height: 400px;

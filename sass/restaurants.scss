@@ -44,6 +44,10 @@ header {
         }
     }
 
+    .banniere{
+        height: 200px;
+    }
+
     .restaurant-img {
         height: 250px;
     }
@@ -52,10 +56,10 @@ header {
 
 .menu {
     flex-direction: column;
-    border-radius: 45px 45px 0 0;
-    background-color: var(--grey-bkg);
-    position: relative;
-    top: -45px;
+    // border-radius: 45px 45px 0 0;
+    // background-color: var(--grey-bkg);
+    //position: relative;
+    //top: -45px;
 
     .titre-menu {
         align-items: center;
@@ -63,6 +67,8 @@ header {
         padding-top: 32px;
         padding-left: 4vw;
         padding-right: 4vw;
+        background-color: var(--grey-bkg);
+        border-radius: 45px 45px 0 0;
 
         h1 {
             font-size: 1.75rem;
@@ -98,24 +104,13 @@ header {
 
 
             .plat-texte {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: fit-content;
-
                 h3 {
-                    // white-space: nowrap;
-                    // overflow: hidden;
-                    // text-overflow: ellipsis;
                     font-size: 1.1rem;
                     font-weight: 500;
                     padding-bottom: 5px;
                 }
 
                 p {
-                    // white-space: nowrap;
-                    // overflow: hidden;
-                    // text-overflow: ellipsis;
                     font-size: 0.9rem;
                     font-weight: 300;
                 }
@@ -150,10 +145,10 @@ header {
     }
 }
 
-footer {
-    position: relative;
-    top: -45px;
-}
+// footer {
+//     position: relative;
+//     top: -45px;
+// }
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -168,6 +163,10 @@ footer {
 
     .menu {
         align-items: center;
+
+        .titre-menu{
+            width: 100%;
+        }
     }
 }
 
@@ -184,6 +183,9 @@ footer {
     }
 
     header {
+        .banniere{
+            height: 350px;
+        }
         .restaurant-img {
             height: 400px;
         }
