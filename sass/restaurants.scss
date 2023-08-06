@@ -69,6 +69,7 @@ header {
         padding-right: 4vw;
         background-color: var(--grey-bkg);
         border-radius: 45px 45px 0 0;
+        min-height: 55px;
 
         h1 {
             font-size: 1.75rem;
@@ -164,8 +165,9 @@ header {
     .menu {
         align-items: center;
 
-        .titre-menu{
+        .titre-menu{            
             width: 100%;
+            justify-content: center;
         }
     }
 }
