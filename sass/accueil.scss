@@ -3,14 +3,16 @@
 
 /********* Loader **********/
 .loader-wrapper{
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     background-color: var(--grey-dark);
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;   
+    z-index: 5;
     color: white; 
-    animation: loader-opacity 8s linear forwards;
+    animation: loader-opacity 1s linear 5s forwards;
 }
 
 .pacmans{
@@ -165,14 +167,8 @@
 
 //////////keyframes Loader////////
 @keyframes loader-opacity{
-    0%, 99.9%{
-        opacity: 1;
-        height: 100vh;
-    }
-
     100%{
-        opacity: 0;
-        height: 0;
+        transform: translateY(-3000px);
     }
 }
 
