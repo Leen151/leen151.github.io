@@ -1,3 +1,5 @@
+@import "keyframes.scss";
+
 :root {
     --purple-color: #9356DC;
     --pink-color: #FF79DA;
@@ -104,29 +106,46 @@ header {
 
 /****** animation des coeurs ******/
 .card-like {
+    width: 2.2rem;
+    text-align: center;
+    position: relative;
+
     .fa-heart {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+               
     }
 
     .fa-solid {
-        display: none;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;  
+        opacity: 0;
+        background: linear-gradient(var(--purple-color), var(--pink-color));
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all;
+        transform-origin: center bottom;
+        transition: opacity 2s ease-in;
     }
 
     .fa-regular {
         color: #353535;
+        transition: all;
+        opacity: 1; 
+        transform-origin: center bottom ;
+        transition: opacity 2s ease-in;
     }
 
     &:hover {
         & .fa-regular {
-            display: none;
+            opacity: 0;
+            //animation: disparition 2s ease-in forwards;
         }
 
         & .fa-solid {
-            display: block;
-            background: linear-gradient(var(--purple-color), var(--pink-color));
-            background-clip: border-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            opacity: 1;
+            //animation: apparition 2s ease-in forwards;
         }
     }
 }
