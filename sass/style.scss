@@ -30,6 +30,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #000;
+}
+
 main {
     background-color: var(--grey-bkg);
 }
@@ -126,7 +130,7 @@ header {
         -webkit-text-fill-color: transparent;
         transition: all;
         transform-origin: center bottom;
-        transition: opacity 2s ease-in;
+        transition: opacity 1s ease-in;
     }
 
     .fa-regular {
@@ -134,7 +138,7 @@ header {
         transition: all;
         opacity: 1; 
         transform-origin: center bottom ;
-        transition: opacity 2s ease-in;
+        transition: opacity 1s ease-in;
     }
 
     &:hover {
