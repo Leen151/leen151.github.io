@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
+    z-index: 3;
     color: white; 
     animation: loader-transition 1s linear 3s forwards;
 }
@@ -18,7 +18,7 @@
 .pacmans{
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    z-index: 2; 
 }
 
 .pacman1, .pacman2{  
@@ -68,7 +68,6 @@
 
 /****** Général *******/
 section{
-    // padding: 40px 18px 65px 18px;
     padding-top: 40px;
     padding-bottom: 65px;
     padding-left: 4vw;
@@ -87,7 +86,7 @@ section{
 /******** logo/header *********/
 header{
     .logo{
-        z-index: 2;
+        z-index: 2; //sinon l'ombre n'est pas visible
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     }    
 
@@ -97,7 +96,6 @@ header{
         padding: 15px 0;
         background-color: var(--grey-2);
         color: var(--grey-dark);
-        font-weight: 500;
 
         i{
             padding-right: 17px;
@@ -150,7 +148,7 @@ header{
     .etape{
         align-items: center;        
         border-radius: 20px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: var(--box-shadox-card);
         width: 100%;
         position: relative;
         left: -0.7rem;
@@ -180,8 +178,8 @@ header{
     }
 
     .restaurant{
-        border-radius: 15px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 0.9rem;
+        box-shadow: var(--box-shadox-card);
 
         .card-content{
             justify-content: space-between;
@@ -204,7 +202,7 @@ header{
                 z-index: 2;
                 position: absolute;
                 top: 7%; right: 3.5%;
-                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+                box-shadow: var(--box-shadox-card);
                 min-width: 80px;
                 min-height: 29px;
                 justify-content: center;
@@ -224,7 +222,6 @@ header{
 
         .card-infos{
             font-size: 1.05rem;
-            font-weight: 300;
         }              
     }
 }
@@ -238,6 +235,10 @@ header{
     .fonctionnement{
         .list-etapes{
             flex-direction: row;
+
+            li{
+                flex: 1;
+            }
         }
         .etape{
             padding-right: 2rem;
