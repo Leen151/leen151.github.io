@@ -79,7 +79,7 @@ header {
         section {
             flex-direction: column; 
             opacity: 0;   
-            height: 0;      
+            //height: 0;      
 
             h2 {
                 text-transform: uppercase;
@@ -104,7 +104,11 @@ header {
             margin-top: 12px;
             justify-content: space-between;  
             // opacity: 0;
-            // height: 0; 
+            position: relative;
+
+            overflow: hidden;
+            width: 100%;
+
         }
         // article:nth-child(1){
         //     animation: apparition 1.6s ease-in-out forwards;
@@ -123,20 +127,39 @@ header {
             padding: 15px;
             justify-content: space-between;
             gap: 5%;
-            flex-grow: 1;
             width: 100%;
+            cursor: pointer;
+            overflow: hidden;
+
+            &:hover + .plat-check{
+                transform: translateX(-70px);
+            }
+            &:hover .plat-prix{
+                padding-right: 70px;
+            }
 
 
             .plat-texte {
+                overflow: hidden;
+                white-space: nowrap;
+
                 h3 {
                     font-size: 1.1rem;
                     font-weight: 500;
                     padding-bottom: 5px;
+
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
 
                 p {
                     font-size: 0.9rem;
                     font-weight: 300;
+
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
             }
 
@@ -144,21 +167,27 @@ header {
                 align-self: flex-end;
                 font-weight: 500;
                 font-size: 0.9rem;
+
+                transition: 1s ease-in-out;
             }
         }
 
         .plat-check {
-            // display: none;
+            position: absolute;
+            right: -70px;
+            height: 100%;
             color: white;
             background-color: var(--green-color);
             justify-content: center;
             align-items: center;
-            width: 60px;
+            width: 70px;
             justify-self: flex-end;
             border-radius: 0 0.9rem 0.9rem 0;
 
+            transition: transform 1s ease-in-out;
+
             i {
-                font-size: 23px;
+                font-size: 1.4rem;
             }
         }
     }

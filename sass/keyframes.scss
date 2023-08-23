@@ -1,128 +1,128 @@
 //////////keyframes Pacman////////
 @keyframes pac-top {
-    0% {
-      transform: rotate(0)
-    }  
-    50% {
-      transform: rotate(-30deg)
-    }  
-    100% {
-      transform: rotate(0)
-    }
-  }
-  
-  @keyframes pac-bot {
-    0% {
-      transform: rotate(0)
-    }  
-    50% {
-    transform: rotate(30deg)
-    }  
-    100% {
-      transform: rotate(0)
-    }
+  0% {
+    transform: rotate(0)
   }  
+  50% {
+    transform: rotate(-30deg)
+  }  
+  100% {
+    transform: rotate(0)
+  }
+}
+  
+@keyframes pac-bot {
+  0% {
+    transform: rotate(0)
+  }  
+  50% {
+    transform: rotate(30deg)
+  }  
+  100% {
+    transform: rotate(0)
+  }
+}  
 
 //////////keyframes Icones////////
-  @keyframes dot-stage1b {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    33.33%{
-        transform: translate(-24px, 0) scale(0.5);
-    }
-    66.67%{
-      transform: translate(-24px, 0) scale(0);
-    }      
-    100%{
-      transform: translate(-24px, 0) scale(0);
-    }
+@keyframes dot-stage1b {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33.33%{
+    transform: translate(-24px, 0) scale(0.5);
+  }
+  66.67%{
+    transform: translate(-24px, 0) scale(0);
+  }      
+  100%{
+    transform: translate(-24px, 0) scale(0);
+  }
+}
+
+@keyframes dot-stage2b {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33.33%{
+    transform: translate(-24px, 0) scale(1);
+  }
+  66.67%{
+    transform: translate(-48px, 0) scale(1);
+  }    
+  100%{
+    transform: translate(-72px, 0) scale(0);
+  }
+}
+
+@keyframes dot-stage3b {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33.33%{
+    transform: translate(-24px, 0) scale(1);
+  }
+  66.67%{
+    transform: translate(-48px, 0) scale(1);
+  }      
+  100%{
+    transform: translate(-72px, 0) scale(1);
+  }
+}
+
+@keyframes dot-stage4b {
+  0% {
+    transform: translate(0, 0) scale(0.5);
+  }
+  33.33%{
+    transform: translate(-24px, 0) scale(1);
+  }
+  66.67%{
+    transform: translate(-48px, 0) scale(1);
+  }
+  100%{
+    transform: translate(-72px, 0) scale(1);
+  }
   }
 
-  @keyframes dot-stage2b {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    33.33%{
-        transform: translate(-24px, 0) scale(1);
-    }
-    66.67%{
-      transform: translate(-48px, 0) scale(1);
-    }    
-    100%{
-      transform: translate(-72px, 0) scale(0);
-    }
+@keyframes dot-stage5b {
+  0% {
+    transform: translate(0, 0) scale(0);
   }
-
-  @keyframes dot-stage3b {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    33.33%{
-        transform: translate(-24px, 0) scale(1);
-    }
-    66.67%{
-      transform: translate(-48px, 0) scale(1);
-    }      
-    100%{
-      transform: translate(-72px, 0) scale(1);
-    }
+  33.33%{
+    transform: translate(-24px, 0) scale(0);
   }
-
-  @keyframes dot-stage4b {
-    0% {
-      transform: translate(0, 0) scale(0.5);
-    }
-    33.33%{
-        transform: translate(-24px, 0) scale(1);
-    }
-    66.67%{
-      transform: translate(-48px, 0) scale(1);
-    }
-    100%{
-        transform: translate(-72px, 0) scale(1);
-    }
+  66.67%{
+    transform: translate(-48px, 0) scale(0.5);
   }
-
-  @keyframes dot-stage5b {
-    0% {
-      transform: translate(0, 0) scale(0);
-    }
-    33.33%{
-        transform: translate(-24px, 0) scale(0);
-    }
-    66.67%{
-      transform: translate(-48px, 0) scale(0.5);
-    }
-    100%{
-        transform: translate(-72px, 0) scale(1);
-    }
+  100%{
+    transform: translate(-72px, 0) scale(1);
   }
+}
 
 //////////keyframes Loader////////
 @keyframes loader-transition{
-    100%{
-        transform: translateY(-3000px);
-    }
+  100%{
+    transform: translateY(-3000px);
+  }
 }
 
 //////////keyframes apparition et disparition////////
 @keyframes apparition{
-    0%{
-        opacity: 0;
-        height: 0;
-    }
-    100%{
-        opacity: 1;
-        height: 100%;
-    }
+  0%{
+    opacity: 0;
+    //height: 0;
+  }
+  100%{
+    opacity: 1;
+    //height: 100%;
+  }
 }
 
 @keyframes disparition{
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
