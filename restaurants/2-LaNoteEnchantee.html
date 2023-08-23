@@ -1,152 +1,238 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhMyFood</title>
+    <title>OhMyFood - La Note Enchantée</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/restaurants.css">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/restaurants.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo titre">ohmyfood</div>
-        <nav>
-            <a href="#">
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </nav>
+    <header class="bkg-white">
+        <div class="conteneur-flex header-logo-nav">
+            <div class="logo titre">ohmyfood</div>
+            <nav class="conteneur-flex">
+                <a href="../index.html">
+                    <div class="conteneur-flex">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+            </nav>
+        </div>
+
+        <div class="banniere">
+            <img src="../assets/images/restaurants/LaNoteEnchantee.jpg" alt=""
+                class="restaurant-img">
+        </div>
     </header>
 
-    <main>        
-        <div>
-            <h1 class="titre">Le délice des sens</h1>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
+    <main class="menu conteneur-flex">
+        <div class="titre-menu conteneur-flex ">
+            <h1 class="titre">La Note Enchantée</h1>
+            <div class="card-like">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
         </div>
-        <div>
-            <section id="entree">
-                <h2 class="titre">Entrées</h2>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>Tartare de thon</h3>
-                        <p>Assaisonné au yuzu</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>25<span>€</span></p>
-                    </div>
-                </article>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>nom du plat</h3>
-                        <p>description</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>15<span>€</span></p>
-                    </div>
-                </article>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>nom du plat</h3>
-                        <p>description</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>15<span>€</span></p>
-                    </div>
-                </article>
-            </section>
-            <section id="plat">
-                <h2 class="titre">Plat</h2>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>nom du plat</h3>
-                        <p>description</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>15<span>€</span></p>
-                    </div>
-                </article>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>nom du plat</h3>
-                        <p>description</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>15<span>€</span></p>
-                    </div>
-                </article>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>nom du plat</h3>
-                        <p>description</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>15<span>€</span></p>
-                    </div>
-                </article>
-            </section>
-            <section id="dessert">
-                <h2 class="titre">dessert</h2>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>nom du plat</h3>
-                        <p>description</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>15<span>€</span></p>
-                    </div>
-                </article>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>nom du plat</h3>
-                        <p>description</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>15<span>€</span></p>
-                    </div>
-                </article>
-                <article class="plat">
-                    <div class="plat-texte">
-                        <h3>nom du plat</h3>
-                        <p>description</p>
-                    </div>
-                    <div class="plat-prix">
-                        <p>15<span>€</span></p>
-                    </div>
-                </article>
-            </section>
-        </div>
-        <div>
-            <button class="btn">Commander</button>
-        </div>
-   </main>
 
-   <footer>
-    <div class="titre-site titre">ohmyfood</div>
-    <div class="lien-footer">
-        <div>
-            <i class="fa-solid fa-utensils"></i>
-            <a href="#">Proposer un restaurant</a>
+        <div class="liste-plats conteneur-flex">
+            <section id="entrees" class="entrees conteneur-flex">
+                <h2>Entrées</h2>
+                <div class="underline"></div>
+                <article class="bkg-white conteneur-flex plat1">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Ravioles de foie gras</h3>
+                            <p class="font-300">Accompagnées de leur crème à la truffe</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>25<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+
+                <article class="bkg-white conteneur-flex plat2">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Caviar osciètre</h3>
+                            <p class="font-300">Sur blini à la farine de blé noir</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>35<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+
+                <article class="bkg-white conteneur-flex plat3">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Homard et espuma de potiron</h3>
+                            <p class="font-300">Marinés aux zestes d'orange</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>20<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
+
+            <section id="plats" class="plats conteneur-flex plat4">
+                <h2>Plats</h2>
+                <div class="underline"></div>
+                <article class="bkg-white conteneur-flex">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Noix de coquilles Saint-Jacques</h3>
+                            <p class="font-300">Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>40<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+
+                <article class="bkg-white conteneur-flex plat5">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Langoustine poêlée</h3>
+                            <p class="font-300">Purée de patate douce</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>35<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+
+                <article class="bkg-white conteneur-flex plat6">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Mijoté de queue de bœuf</h3>
+                            <p class="font-300">Et riz sauvage aux zestes de citron</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>44<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
+
+            <section id="desserts" class="desserts conteneur-flex">
+                <h2>Desserts</h2>
+                <div class="underline"></div>
+                <article class="bkg-white conteneur-flex plat7">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Macaron noisette et chocolat</h3>
+                            <p class="font-300">Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>18<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+
+                <article class="bkg-white conteneur-flex plat8">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Baba au rhum revisité</h3>
+                            <p class="font-300">Avec son coulis de citron</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>22<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+
+                <article class="bkg-white conteneur-flex plat9">
+                    <div class="plat conteneur-flex">
+                        <div class="plat-texte">
+                            <h3 class="font-500">Tarte au citron meringuée</h3>
+                            <p class="font-300">Déstructurée</p>
+                        </div>
+                        <div class="plat-prix font-500">
+                            <p>23<span>€</span></p>
+                        </div>
+                    </div>
+
+                    <div class="plat-check conteneur-flex">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
         </div>
-        <div>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <a href="#">Devenir partenaire</a>
+
+        <div class="div-btn conteneur-flex">
+            <input type="submit" value="Commander" class="btn font-500">
         </div>
-        <div><a href="#">Mentions légales</a></div>
-        <div><a href="#">Contact</a></div>
-    </div>
-   </footer>
-    
+    </main>
+
+    <footer class="conteneur-flex">
+        <h2 class="titre-site titre">ohmyfood</h2>
+
+        <ul class="lien-footer conteneur-flex">
+            <li class="conteneur-flex element-1">
+                <div class="icone-footer conteneur-flex">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <a href="#" class="font-500">Proposer un restaurant</a>
+            </li>
+            <li class="conteneur-flex element-1">
+                <div class="icone-footer conteneur-flex">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+                <a href="#" class="font-500">Devenir partenaire</a>
+            </li>
+            <li class="conteneur-flex element-2">
+                <a href="#" class="font-300">Mentions légales</a>
+            </li>
+            <li class="conteneur-flex element-2">
+                <a href="mailto:#" class="font-300">Contact</a>
+            </li>
+        </ul>
+    </footer>
+
 </body>
+
 </html>

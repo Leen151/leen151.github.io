@@ -125,6 +125,13 @@ header {
             overflow: hidden;
             width: 100%;
 
+            &:hover .plat-check{
+                transform: translateX(-70px);
+            }
+            &:hover .plat-prix{
+                padding-right: 70px;
+            }
+
         }
         // article:nth-child(1){
         //     animation: apparition 1.6s ease-in-out forwards;
@@ -146,14 +153,6 @@ header {
             width: 100%;
             cursor: pointer;
             overflow: hidden;
-
-            &:hover + .plat-check{
-                transform: translateX(-70px);
-            }
-            &:hover .plat-prix{
-                padding-right: 70px;
-            }
-
 
             .plat-texte {
                 overflow: hidden;
