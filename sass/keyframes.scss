@@ -24,22 +24,19 @@
 }  
 
 //////////keyframes Icones////////
-@keyframes dot-stage1b {
+@keyframes icone1 {
   0% {
     transform: translate(0, 0) scale(1);
   }
   33.33%{
     transform: translate(-24px, 0) scale(0.5);
   }
-  66.67%{
-    transform: translate(-24px, 0) scale(0);
-  }      
-  100%{
+  66.67%, 100%{
     transform: translate(-24px, 0) scale(0);
   }
 }
 
-@keyframes dot-stage2b {
+@keyframes icone2 {
   0% {
     transform: translate(0, 0) scale(1);
   }
@@ -54,7 +51,7 @@
   }
 }
 
-@keyframes dot-stage3b {
+@keyframes icone3 {
   0% {
     transform: translate(0, 0) scale(1);
   }
@@ -69,7 +66,7 @@
   }
 }
 
-@keyframes dot-stage4b {
+@keyframes icone4 {
   0% {
     transform: translate(0, 0) scale(0.5);
   }
@@ -84,7 +81,7 @@
   }
   }
 
-@keyframes dot-stage5b {
+@keyframes icone5 {
   0% {
     transform: translate(0, 0) scale(0);
   }
@@ -99,14 +96,14 @@
   }
 }
 
-//////////keyframes Loader////////
+//////////keyframes Loader disparition////////
 @keyframes loader-transition{
   100%{
-    transform: translateY(-9000px);
+    transform: translateY(-3000px);
   }
 }
 
-//////////keyframes apparition et disparition////////
+//////////keyframes apparition////////
 @keyframes apparition{
     0%{
         opacity: 0;
@@ -114,13 +111,4 @@
     100%{
         opacity: 1;
     }
-}
-
-@keyframes disparition{
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
 }

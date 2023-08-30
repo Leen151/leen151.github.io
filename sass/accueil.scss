@@ -13,57 +13,55 @@
     z-index: 3;
     color: white; 
     animation: loader-transition 1s linear 3s forwards;
-}
 
-.pacmans{
-    display: flex;
-    flex-direction: column;
-    z-index: 2; 
-}
+    .pacmans{
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+    
+        .pacman1, .pacman2{
+            width: 60px;
+            height: 30px;
+        }
+        .pacman1{
+            border-radius: 100px 100px 0 0;
+            animation: pac-top 0.6s linear infinite;
+            transform-origin: center bottom;
+            background: radial-gradient(ellipse at bottom, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        }
+        .pacman2{
+            border-radius: 0 0 100px 100px;
+            animation: pac-bot 0.6s linear infinite;
+            transform-origin: center top;
+            background: radial-gradient(ellipse at top, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        }
+    }
 
-.pacman1, .pacman2{  
-    width: 60px;
-    height: 30px;
+    .icones{
+        display: flex;
+        gap: 20px;
+    
+        .icone:nth-child(1) {
+            animation: icone1 1.2s infinite;
+        }
+    
+        .icone:nth-child(2) {
+            animation: icone2 1.2s infinite;
+        }
+    
+        .icone:nth-child(3) {
+            animation: icone3 1.2s  infinite;
+        }
+    
+        .icone:nth-child(4) {
+            animation: icone4 1.2s infinite;
+        }
+    
+        .icone:nth-child(5) {
+            animation: icone5 1.2s infinite;
+        }
+    }
 }
-.pacman1{
-    border-radius: 100px 100px 0 0;
-    animation: pac-top 0.8s linear infinite;
-    transform-origin: center bottom;
-    background: radial-gradient(ellipse at bottom, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-}
-.pacman2{
-    border-radius: 0 0 100px 100px;
-    animation: pac-bot 0.8s linear infinite;
-    transform-origin: center top;
-    background: radial-gradient(ellipse at top, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-}
-
-.icones{
-    display: flex;
-    gap: 20px;
-}
-
-.icones .icone:nth-child(1) {
-    animation: dot-stage1b 1.4s infinite;
-  }
-  
-  .icones .icone:nth-child(2) {
-    animation: dot-stage2b 1.4s infinite;
-  }
-  
-  .icones .icone:nth-child(3) {
-    animation: dot-stage3b 1.4s  infinite;
-  }
-  
-  .icones .icone:nth-child(4) {
-    animation: dot-stage4b 1.4s infinite;
-  }
-  
-  .icones .icone:nth-child(5) {
-    animation: dot-stage5b 1.4s infinite;
-  }
-
-
 
 
 /****** Général *******/
