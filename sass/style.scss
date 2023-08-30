@@ -130,7 +130,7 @@ header {
         -webkit-text-fill-color: transparent;
         transition: all;
         transform-origin: center bottom;
-        transition: opacity 0.8s ease-in;
+        transition: opacity 0.3s ease-in;
     }
 
     .fa-regular {
@@ -138,18 +138,16 @@ header {
         transition: all;
         opacity: 1; 
         transform-origin: center bottom ;
-        transition: opacity 0.8s ease-in;
+        transition: opacity 0.3s ease-in;
     }
 
     &:hover {
         & .fa-regular {
             opacity: 0;
-            //animation: disparition 2s ease-in forwards;
         }
 
         & .fa-solid {
             opacity: 1;
-            //animation: apparition 2s ease-in forwards;
         }
     }
 }
@@ -161,7 +159,6 @@ footer {
     background-color: var(--grey-dark);
     flex-direction: column;
     gap: 1rem;
-
 
     .titre,
     i,
@@ -213,13 +210,6 @@ footer {
             flex-direction: row;
             order: 1;
             gap: 20px;
-
-            // .element-1{
-            //     width: 11.8rem;
-            // }
-            // .element-2{
-            //     width: 7.8rem;
-            // }
         }
         .icone-footer {
             width: auto;

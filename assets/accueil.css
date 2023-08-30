@@ -83,21 +83,18 @@ audio:not([controls]),
     transform: rotate(0);
   }
 }
-@keyframes dot-stage1b {
+@keyframes icone1 {
   0% {
     transform: translate(0, 0) scale(1);
   }
   33.33% {
     transform: translate(-24px, 0) scale(0.5);
   }
-  66.67% {
-    transform: translate(-24px, 0) scale(0);
-  }
-  100% {
+  66.67%, 100% {
     transform: translate(-24px, 0) scale(0);
   }
 }
-@keyframes dot-stage2b {
+@keyframes icone2 {
   0% {
     transform: translate(0, 0) scale(1);
   }
@@ -111,7 +108,7 @@ audio:not([controls]),
     transform: translate(-72px, 0) scale(0);
   }
 }
-@keyframes dot-stage3b {
+@keyframes icone3 {
   0% {
     transform: translate(0, 0) scale(1);
   }
@@ -125,7 +122,7 @@ audio:not([controls]),
     transform: translate(-72px, 0) scale(1);
   }
 }
-@keyframes dot-stage4b {
+@keyframes icone4 {
   0% {
     transform: translate(0, 0) scale(0.5);
   }
@@ -139,7 +136,7 @@ audio:not([controls]),
     transform: translate(-72px, 0) scale(1);
   }
 }
-@keyframes dot-stage5b {
+@keyframes icone5 {
   0% {
     transform: translate(0, 0) scale(0);
   }
@@ -161,19 +158,9 @@ audio:not([controls]),
 @keyframes apparition {
   0% {
     opacity: 0;
-    height: 0;
   }
   100% {
     opacity: 1;
-    height: 100%;
-  }
-}
-@keyframes disparition {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 :root {
@@ -263,6 +250,7 @@ header .logo .titre {
   border-radius: 1.6rem;
   padding: 0.8rem 1.2rem;
   color: white;
+  cursor: pointer;
   font-size: 1rem;
 }
 .btn:hover {
@@ -295,14 +283,14 @@ header .logo .titre {
   -webkit-text-fill-color: transparent;
   transition: all;
   transform-origin: center bottom;
-  transition: opacity 0.8s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .card-like .fa-regular {
   color: #353535;
   transition: all;
   opacity: 1;
   transform-origin: center bottom;
-  transition: opacity 0.8s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .card-like:hover .fa-regular {
   opacity: 0;
@@ -377,55 +365,45 @@ footer .icone-footer {
   color: white;
   animation: loader-transition 1s linear 3s forwards;
 }
-
-.pacmans {
+.loader-wrapper .pacmans {
   display: flex;
   flex-direction: column;
   z-index: 2;
 }
-
-.pacman1, .pacman2 {
+.loader-wrapper .pacmans .pacman1, .loader-wrapper .pacmans .pacman2 {
   width: 60px;
   height: 30px;
 }
-
-.pacman1 {
+.loader-wrapper .pacmans .pacman1 {
   border-radius: 100px 100px 0 0;
-  animation: pac-top 0.8s linear infinite;
+  animation: pac-top 0.6s linear infinite;
   transform-origin: center bottom;
   background: radial-gradient(ellipse at bottom, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
 }
-
-.pacman2 {
+.loader-wrapper .pacmans .pacman2 {
   border-radius: 0 0 100px 100px;
-  animation: pac-bot 0.8s linear infinite;
+  animation: pac-bot 0.6s linear infinite;
   transform-origin: center top;
   background: radial-gradient(ellipse at top, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
 }
-
-.icones {
+.loader-wrapper .icones {
   display: flex;
   gap: 20px;
 }
-
-.icones .icone:nth-child(1) {
-  animation: dot-stage1b 1.4s infinite;
+.loader-wrapper .icones .icone:nth-child(1) {
+  animation: icone1 1.2s infinite;
 }
-
-.icones .icone:nth-child(2) {
-  animation: dot-stage2b 1.4s infinite;
+.loader-wrapper .icones .icone:nth-child(2) {
+  animation: icone2 1.2s infinite;
 }
-
-.icones .icone:nth-child(3) {
-  animation: dot-stage3b 1.4s infinite;
+.loader-wrapper .icones .icone:nth-child(3) {
+  animation: icone3 1.2s infinite;
 }
-
-.icones .icone:nth-child(4) {
-  animation: dot-stage4b 1.4s infinite;
+.loader-wrapper .icones .icone:nth-child(4) {
+  animation: icone4 1.2s infinite;
 }
-
-.icones .icone:nth-child(5) {
-  animation: dot-stage5b 1.4s infinite;
+.loader-wrapper .icones .icone:nth-child(5) {
+  animation: icone5 1.2s infinite;
 }
 
 /****** Général *******/

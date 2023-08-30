@@ -83,21 +83,18 @@ audio:not([controls]),
     transform: rotate(0);
   }
 }
-@keyframes dot-stage1b {
+@keyframes icone1 {
   0% {
     transform: translate(0, 0) scale(1);
   }
   33.33% {
     transform: translate(-24px, 0) scale(0.5);
   }
-  66.67% {
-    transform: translate(-24px, 0) scale(0);
-  }
-  100% {
+  66.67%, 100% {
     transform: translate(-24px, 0) scale(0);
   }
 }
-@keyframes dot-stage2b {
+@keyframes icone2 {
   0% {
     transform: translate(0, 0) scale(1);
   }
@@ -111,7 +108,7 @@ audio:not([controls]),
     transform: translate(-72px, 0) scale(0);
   }
 }
-@keyframes dot-stage3b {
+@keyframes icone3 {
   0% {
     transform: translate(0, 0) scale(1);
   }
@@ -125,7 +122,7 @@ audio:not([controls]),
     transform: translate(-72px, 0) scale(1);
   }
 }
-@keyframes dot-stage4b {
+@keyframes icone4 {
   0% {
     transform: translate(0, 0) scale(0.5);
   }
@@ -139,7 +136,7 @@ audio:not([controls]),
     transform: translate(-72px, 0) scale(1);
   }
 }
-@keyframes dot-stage5b {
+@keyframes icone5 {
   0% {
     transform: translate(0, 0) scale(0);
   }
@@ -155,7 +152,7 @@ audio:not([controls]),
 }
 @keyframes loader-transition {
   100% {
-    transform: translateY(-9000px);
+    transform: translateY(-3000px);
   }
 }
 @keyframes apparition {
@@ -164,14 +161,6 @@ audio:not([controls]),
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes disparition {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 :root {
@@ -294,14 +283,14 @@ header .logo .titre {
   -webkit-text-fill-color: transparent;
   transition: all;
   transform-origin: center bottom;
-  transition: opacity 0.8s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .card-like .fa-regular {
   color: #353535;
   transition: all;
   opacity: 1;
   transform-origin: center bottom;
-  transition: opacity 0.8s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .card-like:hover .fa-regular {
   opacity: 0;
@@ -366,7 +355,7 @@ footer .icone-footer {
 /****** Général *******/
 .underline {
   height: 0.19rem;
-  width: 3rem;
+  width: 2.5rem;
   background-color: var(--green-color);
   margin-top: 4px;
 }
@@ -442,13 +431,13 @@ header .restaurant-img {
   font-size: 1rem;
 }
 .menu .liste-plats section:nth-child(1) {
-  animation: apparition 1.6s ease-in-out forwards;
+  animation: apparition 1s ease-in-out forwards;
 }
 .menu .liste-plats section:nth-child(2) {
-  animation: apparition 1.6s ease-in-out 1.5s forwards;
+  animation: apparition 1s ease-in-out 1s forwards;
 }
 .menu .liste-plats section:nth-child(3) {
-  animation: apparition 1.6s ease-in-out 3s forwards;
+  animation: apparition 1s ease-in-out 2s forwards;
 }
 .menu .liste-plats article {
   box-shadow: var(--box-shadox-card);
@@ -494,7 +483,7 @@ header .restaurant-img {
 .menu .liste-plats .plat .plat-prix {
   align-self: flex-end;
   font-size: 0.9rem;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .menu .liste-plats .plat-check {
   position: absolute;
@@ -507,7 +496,7 @@ header .restaurant-img {
   width: 70px;
   justify-self: flex-end;
   border-radius: 0 0.9rem 0.9rem 0;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .menu .liste-plats .plat-check i {
   font-size: 1.4rem;

@@ -4,7 +4,7 @@
 /****** Général *******/
 .underline {
     height: 0.19rem;
-    width: 3rem;
+    width: 2.5rem;
     background-color: var(--green-color);
     margin-top: 4px;
 }
@@ -93,24 +93,15 @@ header {
         }
 
         section:nth-child(1){
-            animation: apparition 1.6s ease-in-out forwards;
+            animation: apparition 1s ease-in-out forwards;
         }
         section:nth-child(2){
-            animation: apparition 1.6s ease-in-out 1.5s forwards;
+            animation: apparition 1s ease-in-out 1s forwards;
         }
         section:nth-child(3){
-            animation: apparition 1.6s ease-in-out 3s forwards;
+            animation: apparition 1s ease-in-out 2s forwards;
         }
 
-        // .plat1{
-        //     animation: apparition 1.6s ease-in-out 3s forwards;
-        // }
-        // .plat2{
-        //     animation: apparition 1.6s ease-in-out 4s forwards;
-        // }
-        // .plat3{
-        //     animation: apparition 1.6s ease-in-out 5s forwards;
-        // }
 
 
         article {
@@ -119,7 +110,6 @@ header {
             margin-top: 12px;
             justify-content: space-between;  
             cursor: pointer;
-            // opacity: 0;
             position: relative;
 
             overflow: hidden;
@@ -131,20 +121,7 @@ header {
             &:hover .plat-prix{
                 padding-right: 70px;
             }
-
         }
-        // article:nth-child(1){
-        //     animation: apparition 1.6s ease-in-out forwards;
-        // }
-        // article:nth-child(2){
-        //     animation: apparition 1.6s ease-in-out forwards;
-        //     animation-delay: 3s;
-        // }
-        // article:nth-child(3){
-        //     animation: apparition 1.6s ease-in-out forwards;
-        //     animation-delay: 6s;
-        // }
-
 
         .plat {
             padding: 15px;
@@ -180,7 +157,7 @@ header {
                 align-self: flex-end;
                 font-size: 0.9rem;
 
-                transition: 1s ease-in-out;
+                transition: 0.5s ease-in-out;
             }
         }
 
@@ -196,7 +173,7 @@ header {
             justify-self: flex-end;
             border-radius: 0 0.9rem 0.9rem 0;
 
-            transition: transform 1s ease-in-out;
+            transition: transform 0.5s ease-in-out;
 
             i {
                 font-size: 1.4rem;
@@ -249,6 +226,4 @@ header {
             height: 400px;
         }
     }
-
-
 }
