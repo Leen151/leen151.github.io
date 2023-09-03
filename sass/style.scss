@@ -116,7 +116,7 @@ header {
 
     .fa-heart {
         font-size: 1.6rem;
-        cursor: pointer;               
+        cursor: pointer;
     }
 
     .fa-solid {
@@ -128,16 +128,12 @@ header {
         color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: all;
-        transform-origin: center bottom;
         transition: opacity 0.3s ease-in;
     }
 
     .fa-regular {
         color: #353535;
-        transition: all;
-        opacity: 1; 
-        transform-origin: center bottom ;
+        opacity: 1;
         transition: opacity 0.3s ease-in;
     }
 
@@ -145,7 +141,6 @@ header {
         & .fa-regular {
             opacity: 0;
         }
-
         & .fa-solid {
             opacity: 1;
         }

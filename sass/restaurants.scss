@@ -102,13 +102,11 @@ header {
             animation: apparition 0.6s ease-in-out 2.2s forwards;
         }
 
-
-
         article {
             box-shadow: var(--box-shadox-card);
             border-radius: 0.9rem;
             margin-top: 12px;
-            justify-content: space-between;  
+            justify-content: space-between;
             cursor: pointer;
             position: relative;
 
