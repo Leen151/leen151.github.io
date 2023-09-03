@@ -281,15 +281,11 @@ header .logo .titre {
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all;
-  transform-origin: center bottom;
   transition: opacity 0.3s ease-in;
 }
 .card-like .fa-regular {
   color: #353535;
-  transition: all;
   opacity: 1;
-  transform-origin: center bottom;
   transition: opacity 0.3s ease-in;
 }
 .card-like:hover .fa-regular {
@@ -408,10 +404,7 @@ footer .icone-footer {
 
 /****** Général *******/
 section {
-  padding-top: 40px;
-  padding-bottom: 65px;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding: 40px 4vw 65px 4vw;
 }
 
 .sous-titre {
@@ -426,7 +419,7 @@ section {
 /******** logo/header *********/
 header .logo {
   z-index: 2;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 header .localisation {
   width: 100%;
@@ -456,6 +449,7 @@ header .localisation i {
 .fonctionnement .list-etapes {
   flex-direction: column;
   gap: 1.5rem;
+  cursor: default;
 }
 .fonctionnement .list-etapes li {
   align-items: center;
